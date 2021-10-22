@@ -492,7 +492,6 @@
         </div>
 
         <div id="ติดต่อ" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
                 กลับสู่หน้าหลัก
                 <i class="fas fa-times"></i>
             </a>
@@ -505,7 +504,7 @@
                     
                     <form id="contact-form" action="" method="POST" class="tm-contact-form">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control rounded-0" placeholder="ชื่อ-นามสกุล" required />
+                            <input type="text" name="name" class="form-control rounded-0" placeholder="Full Name" required />
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
@@ -513,15 +512,17 @@
                         <div class="form-group">
                             <select class="form-control" id="contact-select" name="inquiry">
                                 <option value="-">Subject</option>
-                        
+                                <option value="sales">Sales &amp; Marketing</option>
+                                <option value="creative">Creative Design</option>
+                                <option value="uiux">UI / UX</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="ข้อความ" required=></textarea>
+                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
                         </div>
 
                         <div class="form-group tm-text-right">
-                            <button type="submit" class="tm-btn tm-btn-primary">ส่ง</button>
+                            <button type="submit" class="tm-btn tm-btn-primary">Send it now</button>
                         </div>
                     </form>
                 </div>

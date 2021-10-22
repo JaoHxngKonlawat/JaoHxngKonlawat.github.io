@@ -492,7 +492,7 @@
         </div>
 
         <div id="ติดต่อ" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="index.html" class="tm-close-popup">
+            <a href="#" class="tm-close-popup">
                 กลับสู่หน้าหลัก
                 <i class="fas fa-times"></i>
             </a>
@@ -500,35 +500,36 @@
             <div class="tm-row tm-contact-row">
                 <div class="tm-col tm-contact-col">
                 
-                <img id="colpic" src="img/176899.jpg">
+                    <img border="0" src="img/176899.jpg" width="200" height="210" onclick="zoomToggle('200px','210px','300px','320px',this);">
                 </div>
                 <div class="tm-col tm-contact-col tm-contact-col-r">
         
 
                     <!-- Address -->
                     <address class="tm-mb-40">
-                        &emsp;<h3>ที่อยู่</h3>
-                        &emsp;บ้านเลขที่ 93/1 หมู่ที่ 3 ถนนพหลโยธิน ตำบลหลวงใต้ อำเภองาว จังหวัดลำปาง รหัสไปรษณีย์ 52110
+                        &ensp;ที่อยู่
+                        &ensp;บ้านเลขที่ 93/1 หมู่ที่ 3 ถนนพหลโยธิน ตำบลหลวงใต้ 
+                        &ensp;อำเภองาว จังหวัดลำปาง รหัสไปรษณีย์ 52110
                     </address>
 
                     <!-- Links -->
                     <ul class="tm-contact-links">
                         <li>
                             <a href="tel:0961308821">
-                                <i class="fas fa-phone tm-contact-link-icon"></i>
-                                &emsp;โทรศัพท์: 096-130-8821
+                                &ensp;<i class="fas fa-phone tm-contact-link-icon"></i>
+                                โทรศัพท์: 096-130-8821
                             </a>
                         </li>
                         <li>
                             <a href="mailto:jaohxng21@gmail.com">
-                                <i class="fas fa-at tm-contact-link-icon"></i>
-                                &emsp;Email: jaohxng21@gmail.com
+                                &ensp;<i class="fas fa-at tm-contact-link-icon"></i>
+                                Email: jaohxng21@gmail.com
                             </a>
                         </li>
                         <li>
                             <a href="https://web.facebook.com/hxng.konlawat/" target="blank">
-                                <i class="fas fa-link tm-contact-link-icon"></i>
-                                &emsp;Facebook: Hxng Konlawat 
+                                &ensp;<i class="fas fa-link tm-contact-link-icon"></i>
+                                Facebook: Hxng Konlawat 
                             </a>
                         </li>
                     </ul>
@@ -548,5 +549,15 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>    
     <script src="js/templatemo-script.js"></script>
+    <script>
+        var nW,nH,oH,oW;
+        function zoomToggle(iWideSmall,iHighSmall,iWideLarge,iHighLarge,whichImage){
+        oW=whichImage.style.width;oH=whichImage.style.height;
+        if((oW==iWideLarge)||(oH==iHighLarge)){
+        nW=iWideSmall;nH=iHighSmall;}else{
+        nW=iWideLarge;nH=iHighLarge;}
+        whichImage.style.width=nW;whichImage.style.height=nH;
+        }
+        </script>
 </body>
 </html>

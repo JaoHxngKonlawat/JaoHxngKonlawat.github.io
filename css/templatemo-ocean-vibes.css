@@ -586,7 +586,7 @@ address {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
     .tm-gallery-row {
         flex-direction: column-reverse;
     }
